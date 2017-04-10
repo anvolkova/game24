@@ -76,7 +76,7 @@ function check() {
 		var solved = document.getElementById("solved");
 		solved.innerHTML = parseInt(solved.innerHTML) + 1;
 		new_task();
-		setTimeout(clear_answer, 3000);
+		setTimeout(clear_answer, 5000);
 	}
 }
 
