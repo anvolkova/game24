@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+ <meta charset="UTF-8">
+ <meta name="viewport" content="width=device-width, height=device-height, initial-scale=1.0">
+ <title>Game 24</title>
+ <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+ <link rel="stylesheet" type="text/css" href="/static/mystyle.css">
+ <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+ <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+</head>
+
+<body>
+
+ <div class="jumbotron text-center">
+   <h1>Game 24</h1>      
+ </div>
+
+<nav class="navbar navbar-inverse">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+        <span class="icon-bar"></span>   
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>                       
+      </button>
+    </div>
+    <div class="collapse navbar-collapse" id="myNavbar">
+      <ul class="nav navbar-nav">
+        {% block nav %}
+        {% endblock nav%}
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<div class="container-fluid desk">
+      {% block content %}
+      {% endblock content %}
+</div>
+
+<footer class="container-fluid text-center">
+  <p>&copy; 2017 Anna Volkova. All rights reserved.</p>
+</footer>
+{% block body %}
+{% endblock body %}
+</body>
+</html>

@@ -1,0 +1,29 @@
+{% extends 'game24/base.html' %}
+
+{% block nav %}
+        <li><a href="index.html">Home</a></li>
+        <li class="active"><a href="#">Rules</a></li>
+{% endblock nav %}
+
+
+{% block content %}
+  <div class="row">
+    <div class="col-md-4">
+        <a href="https://en.wikipedia.org/wiki/24_Game" target="_blank">
+          <img src="https://upload.wikimedia.org/wikipedia/en/2/23/Sample_24_card.jpg" class="img-thumbnail" 
+          alt="Game 24" style="margin:15px;">
+        </a>
+    </div>
+    <div class="col-md-4">
+      <h2>Game rules</h2>
+	<p>The 24 Game is an arithmetical card game in which the objective is to find a way to manipulate four 
+integers so that the end result is 24. For example, for the card with the numbers 4, 7, 8, 8, a possible 
+solution is (7-(8/8))*4=24. </p>
+<p>The game has been played in Shanghai since the 1960s, using playing cards. </p>
+<p>The original version of 24 is played with an ordinary deck of playing cards with all the face cards removed. 
+The aces are taken to have the value 1 and the basic game proceeds by having 4 cards dealt and the first 
+player that can achieve the number 24 exactly using only allowed operations (addition, subtraction, 
+multiplication, division, and parentheses) wins the hand. </p>
+    </div>
+  </div>
+{% endblock content %}
